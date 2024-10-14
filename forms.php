@@ -8,11 +8,13 @@
 <body>
     <form method="post" action ="forms.php">
 
-        <label for="name">Enter Your First Name:</label><br>
-                <input type="text" id="name" name="firstname">
+                <label for="name">Enter Your First Name:</label>
+                <br>
+                <input type="text" id="fname" name="firstname">
                 <br>
 
-                <label for="lastname">Enter Your Last Name:</label><br>
+                <label for="lastname">Enter Your Last Name:</label>
+                <br>
                 <input type="text" id="surname" name="lastname">
                 <br>
 
