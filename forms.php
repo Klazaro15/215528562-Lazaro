@@ -9,12 +9,11 @@
     <form method="post" action ="forms.php">
 
         <label for="name">Enter Your First Name:</label><br>
-                <input type=" id "name" name="name">
+                <input type="text" id="name" name="firstname">
                 <br>
 
                 <label for="lastname">Enter Your Last Name:</label><br>
-
-                <input type="text" if="lastname" name="lastname">
+                <input type="text" id="surname" name="lastname">
                 <br>
 
                 <label for="age">Enter Your Age:</label><br>
@@ -27,13 +26,13 @@
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $name=htmlspecialchars($_POST['name']);
+        $lastname=htmlspecialchars($_POST['lastname']);
         $age=htmlspecialchars($_POST['edad']);
-        $lasname=htmlspecialchars($_POST['lastname']);
     
         echo "<h4>Your Inputs</h4>";
         echo "Name: " .$name ."<br>";
         echo "Last Name: " .$lastname . "<br>";
-        echo "Age: " .age  ."<br>";
+        echo "Age: " .$age  ."<br>";
 
     };
 
