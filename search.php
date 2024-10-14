@@ -18,9 +18,9 @@
     if (isset($_GET['query'])) {
         $searchQuery = htmlspecialchars($GET['query']);
 
-        $sername = "localhost";
+        $username = "localhost";
         $username = "root";
-        $password = "052781":
+        $password = "kirsten":
         $dbname = "search_db";
 
         $conn = nem mysqli(servername, $username, $password, $dbname);
